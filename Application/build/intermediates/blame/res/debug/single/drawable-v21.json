@@ -1,0 +1,66 @@
+[
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/res/drawable-v21/avd_hide_password.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
+        "source": "/home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/malk/.android/build-cache/f4b3a9608ae22cc3fbe3a260b050636db038de86/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/malk/.android/build-cache/f4b3a9608ae22cc3fbe3a260b050636db038de86/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/malk/.android/build-cache/f4b3a9608ae22cc3fbe3a260b050636db038de86/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/home/malk/.android/build-cache/f4b3a9608ae22cc3fbe3a260b050636db038de86/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/abc_btn_colored_material.xml",
+        "source": "/home/malk/.android/build-cache/f4b3a9608ae22cc3fbe3a260b050636db038de86/output/res/drawable-v21/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/notification_action_background.xml",
+        "source": "/home/malk/.android/build-cache/f4b3a9608ae22cc3fbe3a260b050636db038de86/output/res/drawable-v21/notification_action_background.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
+        "source": "/home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/res/drawable-v21/design_password_eye.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/abc_edit_text_material.xml",
+        "source": "/home/malk/.android/build-cache/f4b3a9608ae22cc3fbe3a260b050636db038de86/output/res/drawable-v21/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/avd_show_password.xml",
+        "source": "/home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/res/drawable-v21/avd_show_password.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/abc_action_bar_item_background_material.xml",
+        "source": "/home/malk/.android/build-cache/f4b3a9608ae22cc3fbe3a260b050636db038de86/output/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/design_bottom_navigation_item_background.xml",
+        "source": "/home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/res/drawable-v21/design_bottom_navigation_item_background.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/design_password_eye.xml",
+        "source": "/home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/res/drawable-v21/design_password_eye.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-v21/avd_hide_password.xml",
+        "source": "/home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/res/drawable-v21/avd_hide_password.xml"
+    }
+]

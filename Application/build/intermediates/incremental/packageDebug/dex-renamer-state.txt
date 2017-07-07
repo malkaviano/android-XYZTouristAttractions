@@ -1,0 +1,7 @@
+#Fri Jul 07 02:47:23 BRT 2017
+base.0=/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_382fd4bf7a9c51593174ce250209a3c14b54b359
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4e1b27498e7317e46a08e49b4203ca4994a0c76c/classes.dex
+base.1=/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4e1b27498e7317e46a08e49b4203ca4994a0c76c
+file.0=/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_382fd4bf7a9c51593174ce250209a3c14b54b359/classes.dex

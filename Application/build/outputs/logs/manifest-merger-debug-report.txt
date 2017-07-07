@@ -1,0 +1,204 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:18:1-80:12
+	package
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:20:5-56
+	android:versionName
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:19:5-51
+	xmlns:android
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:18:11-69
+	android:versionCode
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:22:22-64
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:23:22-76
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:24:22-65
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:25:5-100
+	tools:node
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:25:78-97
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:25:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:26:5-101
+	tools:node
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:26:79-98
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:26:22-78
+application
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:28:5-78:19
+MERGED from [com.google.android.gms:play-services-location:10.2.4] /home/malk/.android/build-cache/48eb087590e7c09fea666117610e1b1a38e9a0a5/output/AndroidManifest.xml:4:5-19
+MERGED from [com.android.support:design:25.3.1] /home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/malk/.android/build-cache/f4b3a9608ae22cc3fbe3a260b050636db038de86/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/malk/.android/build-cache/f37b54959b247064feca759a24f9bacf70772d8f/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/malk/.android/build-cache/d9b6b896e2f82ae0177ebea69f908641127926e0/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] /home/malk/.android/build-cache/e66ee6772556fe128b47a0f8e7773c42a2f22554/output/AndroidManifest.xml:26:5-20
+MERGED from [android-XYZTouristAttractions:Shared:unspecified] /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Shared/build/intermediates/bundles/default/AndroidManifest.xml:24:5-47
+MERGED from [com.android.support:support-v13:25.3.1] /home/malk/.android/build-cache/bb4610af817534315b126b7e4a683d8a7530ba87/output/AndroidManifest.xml:29:5-20
+MERGED from [com.google.android.gms:play-services-wearable:10.2.4] /home/malk/.android/build-cache/b2bda37819e426e2c6f827383b1b84cab344ca71/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:10.2.4] /home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /home/malk/.android/build-cache/7f59ccd769a6d784ec008481a4fd716a634eb085/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/malk/.android/build-cache/d8600dcaba3454109aaf6c31301f3bcaaae686d2/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] /home/malk/.android/build-cache/6979a5874938a487f6eb1ce07cdf164f680558dd/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /home/malk/.android/build-cache/c8b1fa67c43f84ee68841e679653b3fec5dd4b0a/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/malk/.android/build-cache/4d33dd0235947d1315b649d6ea7159141aaa60f4/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/malk/.android/build-cache/0a32e3ebe92666e0f52ac2edf17c157361d130ae/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/malk/.android/build-cache/86560fb2e499ed9c2c7b9802a9deb1e78725718f/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /home/malk/.android/build-cache/780b9b47d63adc63ea9c697c8f1b8a50adf5bfe1/output/AndroidManifest.xml:29:5-20
+MERGED from [com.google.maps.android:android-maps-utils:0.3.4] /home/malk/.android/build-cache/d781eabfdeedfd716fbafce53daab69dff6ba84e/output/AndroidManifest.xml:7:5-20
+	android:label
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:31:9-41
+	android:fullBackupContent
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:33:9-41
+	android:allowBackup
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:29:9-35
+	android:icon
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:30:9-43
+	android:theme
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:32:9-43
+activity#com.example.android.xyztouristattractions.ui.AttractionListActivity
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:35:9-44:20
+	android:label
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:37:13-45
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:36:13-54
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:39:13-42:29
+action#android.intent.action.MAIN
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:40:17-69
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:40:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:41:17-77
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:41:27-74
+activity#com.example.android.xyztouristattractions.ui.DetailActivity
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:46:9-50:71
+	android:label
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:48:13-45
+	android:parentActivityName
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:50:13-68
+	android:theme
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:49:13-54
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:47:13-46
+receiver#com.example.android.xyztouristattractions.service.UtilityReceiver
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:52:9-61
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:52:19-58
+service#com.example.android.xyztouristattractions.service.UtilityService
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:54:9-59
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:54:18-56
+service#com.example.android.xyztouristattractions.service.ListenerService
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:56:9-69:19
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:56:18-57
+intent-filter#com.google.android.gms.wearable.MESSAGE_RECEIVED
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:57:13-68:29
+action#com.google.android.gms.wearable.MESSAGE_RECEIVED
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:59:17-91
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:59:25-88
+data
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:62:17-91
+	android:host
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:62:45-61
+	android:scheme
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:62:23-44
+	android:pathPrefix
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:62:62-89
+meta-data#com.google.android.gms.version
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:71:9-72:69
+MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/malk/.android/build-cache/d8600dcaba3454109aaf6c31301f3bcaaae686d2/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:72:13-66
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:71:20-65
+meta-data#com.example.android.xyztouristattractions.config.GlideConfiguration
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:74:9-76:42
+	android:value
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:76:13-40
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml:75:13-95
+uses-sdk
+INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.google.android.gms:play-services-location:10.2.4] /home/malk/.android/build-cache/48eb087590e7c09fea666117610e1b1a38e9a0a5/output/AndroidManifest.xml:3:5-43
+MERGED from [com.android.support:design:25.3.1] /home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/malk/.android/build-cache/f4b3a9608ae22cc3fbe3a260b050636db038de86/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/malk/.android/build-cache/f37b54959b247064feca759a24f9bacf70772d8f/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/malk/.android/build-cache/d9b6b896e2f82ae0177ebea69f908641127926e0/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/malk/.android/build-cache/1507e940528bebd56bb841bc0ed24c049ea98013/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] /home/malk/.android/build-cache/e66ee6772556fe128b47a0f8e7773c42a2f22554/output/AndroidManifest.xml:20:5-44
+MERGED from [android-XYZTouristAttractions:Shared:unspecified] /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Shared/build/intermediates/bundles/default/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:support-v13:25.3.1] /home/malk/.android/build-cache/bb4610af817534315b126b7e4a683d8a7530ba87/output/AndroidManifest.xml:21:5-23:55
+MERGED from [com.google.android.gms:play-services-wearable:10.2.4] /home/malk/.android/build-cache/b2bda37819e426e2c6f827383b1b84cab344ca71/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.4] /home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /home/malk/.android/build-cache/7f59ccd769a6d784ec008481a4fd716a634eb085/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/malk/.android/build-cache/d8600dcaba3454109aaf6c31301f3bcaaae686d2/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.3.1] /home/malk/.android/build-cache/6979a5874938a487f6eb1ce07cdf164f680558dd/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /home/malk/.android/build-cache/c8b1fa67c43f84ee68841e679653b3fec5dd4b0a/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/malk/.android/build-cache/4d33dd0235947d1315b649d6ea7159141aaa60f4/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/malk/.android/build-cache/0a32e3ebe92666e0f52ac2edf17c157361d130ae/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/malk/.android/build-cache/86560fb2e499ed9c2c7b9802a9deb1e78725718f/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] /home/malk/.android/build-cache/780b9b47d63adc63ea9c697c8f1b8a50adf5bfe1/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.google.maps.android:android-maps-utils:0.3.4] /home/malk/.android/build-cache/d781eabfdeedfd716fbafce53daab69dff6ba84e/output/AndroidManifest.xml:5:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] /home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] /home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] /home/malk/.android/build-cache/f4b3a9608ae22cc3fbe3a260b050636db038de86/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] /home/malk/.android/build-cache/f37b54959b247064feca759a24f9bacf70772d8f/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] /home/malk/.android/build-cache/d9b6b896e2f82ae0177ebea69f908641127926e0/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] /home/malk/.android/build-cache/1507e940528bebd56bb841bc0ed24c049ea98013/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] /home/malk/.android/build-cache/e66ee6772556fe128b47a0f8e7773c42a2f22554/output/AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v13:25.3.1] /home/malk/.android/build-cache/bb4610af817534315b126b7e4a683d8a7530ba87/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /home/malk/.android/build-cache/6979a5874938a487f6eb1ce07cdf164f680558dd/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /home/malk/.android/build-cache/c8b1fa67c43f84ee68841e679653b3fec5dd4b0a/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/malk/.android/build-cache/4d33dd0235947d1315b649d6ea7159141aaa60f4/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/malk/.android/build-cache/0a32e3ebe92666e0f52ac2edf17c157361d130ae/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/malk/.android/build-cache/86560fb2e499ed9c2c7b9802a9deb1e78725718f/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /home/malk/.android/build-cache/780b9b47d63adc63ea9c697c8f1b8a50adf5bfe1/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] /home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] /home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/AndroidManifest.xml:26:9-47
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:19:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/AndroidManifest.xml:19:19-85

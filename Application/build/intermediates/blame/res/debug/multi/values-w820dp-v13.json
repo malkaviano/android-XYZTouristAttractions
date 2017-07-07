@@ -1,0 +1,50 @@
+[
+    {
+        "outputFile": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 44,
+                    "endOffset": 95
+                },
+                "from": {
+                    "file": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 623,
+                        "endColumn": 44,
+                        "endOffset": 663
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "outputFile": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 44,
+                    "endOffset": 95
+                },
+                "from": {
+                    "file": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/src/main/res/values-w820dp/dimens.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 623,
+                        "endColumn": 44,
+                        "endOffset": 663
+                    }
+                }
+            }
+        ]
+    }
+]
