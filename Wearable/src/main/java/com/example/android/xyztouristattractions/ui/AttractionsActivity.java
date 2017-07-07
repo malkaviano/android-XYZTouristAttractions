@@ -107,7 +107,7 @@ public class AttractionsActivity extends Activity
                     // the inset ourselves lets us position views outside the center
                     // box. For example, slightly lower on the round screen (by giving
                     // up some horizontal space).
-                    mInsets = Utils.calculateBottomInsetsOnRoundDevice(
+                    mInsets = Utils.INSTANCE.calculateBottomInsetsOnRoundDevice(
                             getWindowManager().getDefaultDisplay(), mInsets);
 
                     // Boost the dots indicator up by the bottom inset
@@ -128,7 +128,7 @@ public class AttractionsActivity extends Activity
         mDismissOverlayView.showIntroIfNecessary();
         mGestureDetector = new GestureDetectorCompat(this, new LongPressListener());
 
-        Uri attractionsUri = getIntent().getParcelableExtra(Constants.EXTRA_ATTRACTIONS_URI);
+        Uri attractionsUri = getIntent().getParcelableExtra(Constants.INSTANCE.getEXTRA_ATTRACTIONS_URI());
         if (attractionsUri != null) {
             new FetchDataAsyncTask(this).execute(attractionsUri);
             UtilityService.clearNotification(this);
@@ -193,10 +193,10 @@ public class AttractionsActivity extends Activity
                     .build();
 
             ConnectionResult connectionResult = googleApiClient.blockingConnect(
-                    Constants.GOOGLE_API_CLIENT_TIMEOUT_S, TimeUnit.SECONDS);
+                    Constants.INSTANCE.getGOOGLE_API_CLIENT_TIMEOUT_S(), TimeUnit.SECONDS);
 
             if (!connectionResult.isSuccess() || !googleApiClient.isConnected()) {
-                Log.e(TAG, String.format(Constants.GOOGLE_API_CLIENT_ERROR_MSG,
+                Log.e(TAG, String.format(Constants.INSTANCE.getGOOGLE_API_CLIENT_ERROR_MSG(),
                         connectionResult.getErrorCode()));
                 return null;
             }
@@ -208,7 +208,7 @@ public class AttractionsActivity extends Activity
             if (dataItemResult.getStatus().isSuccess() && dataItemResult.getDataItem() != null) {
                 DataMapItem dataMapItem = DataMapItem.fromDataItem(dataItemResult.getDataItem());
                 List<DataMap> attractionsData =
-                        dataMapItem.getDataMap().getDataMapArrayList(Constants.EXTRA_ATTRACTIONS);
+                        dataMapItem.getDataMap().getDataMapArrayList(Constants.INSTANCE.getEXTRA_ATTRACTIONS());
 
                 // Loop through each attraction, adding them to the list
                 Iterator<DataMap> itr = attractionsData.iterator();
@@ -216,19 +216,17 @@ public class AttractionsActivity extends Activity
                     DataMap attractionData = itr.next();
 
                     Attraction attraction = new Attraction();
-                    attraction.name = attractionData.getString(Constants.EXTRA_TITLE);
-                    attraction.description =
-                            attractionData.getString(Constants.EXTRA_DESCRIPTION);
-                    attraction.city = attractionData.get(Constants.EXTRA_CITY);
-                    attraction.distance =
-                            attractionData.getString(Constants.EXTRA_DISTANCE);
-                    attraction.location = new LatLng(
-                            attractionData.getDouble(Constants.EXTRA_LOCATION_LAT),
-                            attractionData.getDouble(Constants.EXTRA_LOCATION_LNG));
-                    attraction.image = Utils.loadBitmapFromAsset(googleApiClient,
-                            attractionData.getAsset(Constants.EXTRA_IMAGE));
-                    attraction.secondaryImage = Utils.loadBitmapFromAsset(googleApiClient,
-                            attractionData.getAsset(Constants.EXTRA_IMAGE_SECONDARY));
+                    attraction.setName(attractionData.getString(Constants.INSTANCE.getEXTRA_TITLE()));
+                    attraction.setDescription(attractionData.getString(Constants.INSTANCE.getEXTRA_DESCRIPTION()));
+                    attraction.setCity(attractionData.getString(Constants.INSTANCE.getEXTRA_CITY()));
+                    attraction.setDistance(attractionData.getString(Constants.INSTANCE.getEXTRA_DISTANCE()));
+                    attraction.setLocation(new LatLng(
+                            attractionData.getDouble(Constants.INSTANCE.getEXTRA_LOCATION_LAT()),
+                            attractionData.getDouble(Constants.INSTANCE.getEXTRA_LOCATION_LNG())));
+                    attraction.setImage(Utils.INSTANCE.loadBitmapFromAsset(googleApiClient,
+                            attractionData.getAsset(Constants.INSTANCE.getEXTRA_IMAGE())));
+                    attraction.setSecondaryImage(Utils.INSTANCE.loadBitmapFromAsset(googleApiClient,
+                            attractionData.getAsset(Constants.INSTANCE.getEXTRA_IMAGE_SECONDARY())));
 
                     mAttractions.add(attraction);
                 }

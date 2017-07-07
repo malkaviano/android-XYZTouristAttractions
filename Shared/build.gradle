@@ -1,25 +1,12 @@
-
-buildscript {
-    repositories {
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.2'
-    }
-}
-
-apply plugin: 'android-library'
-
-repositories {
-    jcenter()
-}
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
 
 dependencies {
     compile 'com.android.support:support-v13:25.3.1'
     compile 'com.google.android.gms:play-services-wearable:10.2.4'
     compile 'com.google.android.gms:play-services-maps:10.2.4'
     compile 'com.google.maps.android:android-maps-utils:0.3.4'
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
 
 // The sample build uses multiple directories to

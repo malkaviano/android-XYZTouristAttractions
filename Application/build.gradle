@@ -1,20 +1,5 @@
-
-buildscript {
-    repositories {
-        jcenter()
-    }
-
-    dependencies {
-        classpath 'com.android.tools.build:gradle:2.3.2'
-    }
-}
-
 apply plugin: 'com.android.application'
-
-
-repositories {
-    jcenter()
-}
+apply plugin: 'kotlin-android'
 
 dependencies {
     compile 'com.google.android.gms:play-services-location:10.2.4'
@@ -27,6 +12,7 @@ dependencies {
     compile 'com.android.support:support-v13:25.3.1'
     compile project(':Shared')
     wearApp project(':Wearable')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
 }
 
 // The sample build uses multiple directories to

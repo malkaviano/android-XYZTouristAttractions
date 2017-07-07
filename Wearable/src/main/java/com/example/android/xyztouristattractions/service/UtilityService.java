@@ -78,7 +78,7 @@ public class UtilityService extends IntentService {
         Intent intent = new Intent(context, UtilityService.class);
         intent.setAction(UtilityService.ACTION_START_DEVICE_ACTIVITY);
         String extraInfo;
-        if (Constants.START_ATTRACTION_PATH.equals(path)) {
+        if (Constants.INSTANCE.getSTART_ATTRACTION_PATH().equals(path)) {
             extraInfo = name;
         } else {
             extraInfo = name + ", " + city;
@@ -111,7 +111,7 @@ public class UtilityService extends IntentService {
     private void clearNotificationInternal() {
         NotificationManager notificationManager =
                 (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
-        notificationManager.cancel(Constants.WEAR_NOTIFICATION_ID);
+        notificationManager.cancel(Constants.INSTANCE.getWEAR_NOTIFICATION_ID());
     }
 
     /**
@@ -123,14 +123,14 @@ public class UtilityService extends IntentService {
                 .build();
 
         ConnectionResult connectionResult = googleApiClient.blockingConnect(
-                Constants.GOOGLE_API_CLIENT_TIMEOUT_S, TimeUnit.SECONDS);
+                Constants.INSTANCE.getGOOGLE_API_CLIENT_TIMEOUT_S(), TimeUnit.SECONDS);
 
         if (connectionResult.isSuccess() && googleApiClient.isConnected()) {
-            Iterator<String> itr = Utils.getNodes(googleApiClient).iterator();
+            Iterator<String> itr = Utils.INSTANCE.getNodes(googleApiClient).iterator();
             while (itr.hasNext()) {
                 // Loop through all connected nodes
                 Wearable.MessageApi.sendMessage(
-                        googleApiClient, itr.next(), Constants.CLEAR_NOTIFICATIONS_PATH, null);
+                        googleApiClient, itr.next(), Constants.INSTANCE.getCLEAR_NOTIFICATIONS_PATH(), null);
             }
         }
 
@@ -150,7 +150,7 @@ public class UtilityService extends IntentService {
                 .build();
 
         ConnectionResult connectionResult = googleApiClient.blockingConnect(
-                Constants.GOOGLE_API_CLIENT_TIMEOUT_S, TimeUnit.SECONDS);
+                Constants.INSTANCE.getGOOGLE_API_CLIENT_TIMEOUT_S(), TimeUnit.SECONDS);
 
         if (connectionResult.isSuccess() && googleApiClient.isConnected()) {
             CapabilityApi.GetCapabilityResult result = Wearable.CapabilityApi.getCapability(

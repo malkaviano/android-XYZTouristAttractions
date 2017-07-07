@@ -56,11 +56,11 @@ public class ListenerService extends WearableListenerService {
         for (DataEvent event : dataEvents) {
             if (event.getType() == DataEvent.TYPE_CHANGED
                     && event.getDataItem() != null
-                    && Constants.ATTRACTION_PATH.equals(event.getDataItem().getUri().getPath())) {
+                    && Constants.INSTANCE.getATTRACTION_PATH().equals(event.getDataItem().getUri().getPath())) {
 
                 DataMapItem dataMapItem = DataMapItem.fromDataItem(event.getDataItem());
                 ArrayList<DataMap> attractionsData =
-                        dataMapItem.getDataMap().getDataMapArrayList(Constants.EXTRA_ATTRACTIONS);
+                        dataMapItem.getDataMap().getDataMapArrayList(Constants.INSTANCE.getEXTRA_ATTRACTIONS());
                 showNotification(dataMapItem.getUri(), attractionsData);
             }
         }
@@ -70,7 +70,7 @@ public class ListenerService extends WearableListenerService {
     public void onMessageReceived(MessageEvent messageEvent) {
         Log.v(TAG, "onMessageReceived: " + messageEvent);
 
-        if (Constants.CLEAR_NOTIFICATIONS_PATH.equals(messageEvent.getPath())) {
+        if (Constants.INSTANCE.getCLEAR_NOTIFICATIONS_PATH().equals(messageEvent.getPath())) {
             // Clear the local notification
             UtilityService.clearNotification(this);
         }
@@ -82,17 +82,17 @@ public class ListenerService extends WearableListenerService {
                 .build();
 
         ConnectionResult connectionResult = googleApiClient.blockingConnect(
-                Constants.GOOGLE_API_CLIENT_TIMEOUT_S, TimeUnit.SECONDS);
+                Constants.INSTANCE.getGOOGLE_API_CLIENT_TIMEOUT_S(), TimeUnit.SECONDS);
 
         if (!connectionResult.isSuccess() || !googleApiClient.isConnected()) {
-            Log.e(TAG, String.format(Constants.GOOGLE_API_CLIENT_ERROR_MSG,
+            Log.e(TAG, String.format(Constants.INSTANCE.getGOOGLE_API_CLIENT_ERROR_MSG(),
                     connectionResult.getErrorCode()));
             return;
         }
 
         Intent intent = new Intent(this, AttractionsActivity.class);
         // Pass through the data Uri as an extra
-        intent.putExtra(Constants.EXTRA_ATTRACTIONS_URI, attractionsUri);
+        intent.putExtra(Constants.INSTANCE.getEXTRA_ATTRACTIONS_URI(), attractionsUri);
         PendingIntent pendingIntent =
                 PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
@@ -100,8 +100,8 @@ public class ListenerService extends WearableListenerService {
 
         DataMap attraction = attractions.get(0);
 
-        Bitmap bitmap = Utils.loadBitmapFromAsset(
-                googleApiClient, attraction.getAsset(Constants.EXTRA_IMAGE));
+        Bitmap bitmap = Utils.INSTANCE.loadBitmapFromAsset(
+                googleApiClient, attraction.getAsset(Constants.INSTANCE.getEXTRA_IMAGE()));
 
         PendingIntent deletePendingIntent = PendingIntent.getService(
                 this, 0, UtilityService.getClearRemoteNotificationsIntent(this), 0);
@@ -120,7 +120,7 @@ public class ListenerService extends WearableListenerService {
                 .build();
 
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
-        notificationManager.notify(Constants.WEAR_NOTIFICATION_ID, notification);
+        notificationManager.notify(Constants.INSTANCE.getWEAR_NOTIFICATION_ID(), notification);
 
         googleApiClient.disconnect();
     }

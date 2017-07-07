@@ -123,15 +123,15 @@ public class AttractionsGridPagerAdapter extends GridPagerAdapter
                     textView.setLayoutParams(params);
 
                     if (column == PAGER_PRIMARY_IMAGE_COLUMN) {
-                        imageView.setImageBitmap(attraction.image);
-                        textView.setText(attraction.name);
+                        imageView.setImageBitmap(attraction.getImage());
+                        textView.setText(attraction.getName());
                     } else {
-                        imageView.setImageBitmap(attraction.secondaryImage);
-                        if (TextUtils.isEmpty(attraction.distance)) {
+                        imageView.setImageBitmap(attraction.getSecondaryImage());
+                        if (TextUtils.isEmpty(attraction.getDistance())) {
                             overlayTextLayout.setVisibility(View.GONE);
                         } else {
                             textView.setText(mContext.getString(
-                                    R.string.map_caption, attraction.distance));
+                                    R.string.map_caption, attraction.getDistance()));
                         }
                     }
                     container.addView(view);
@@ -141,7 +141,7 @@ public class AttractionsGridPagerAdapter extends GridPagerAdapter
                     CardScrollView cardScrollView = (CardScrollView) mLayoutInflater.inflate(
                             R.layout.gridpager_card, container, false);
                     TextView descTextView = (TextView) cardScrollView.findViewById(R.id.textView);
-                    descTextView.setText(attraction.description);
+                    descTextView.setText(attraction.getDescription());
                     cardScrollView.setCardGravity(Gravity.BOTTOM);
                     cardScrollView.setExpansionEnabled(true);
                     cardScrollView.setExpansionDirection(CardFrame.EXPAND_DOWN);
@@ -154,7 +154,7 @@ public class AttractionsGridPagerAdapter extends GridPagerAdapter
                             R.layout.gridpager_action, container, false);
 
                     navActionPage.setOnClickListener(getStartActionClickListener(
-                            attraction, Constants.START_NAVIGATION_PATH,
+                            attraction, Constants.INSTANCE.getSTART_NAVIGATION_PATH(),
                             ConfirmationActivity.SUCCESS_ANIMATION));
                     navActionPage.setImageResource(R.drawable.ic_full_directions_walking);
                     navActionPage.setText(mContext.getString(R.string.action_navigate));
@@ -167,7 +167,7 @@ public class AttractionsGridPagerAdapter extends GridPagerAdapter
                             R.layout.gridpager_action, container, false);
 
                     openActionPage.setOnClickListener(getStartActionClickListener(
-                            attraction, Constants.START_ATTRACTION_PATH,
+                            attraction, Constants.INSTANCE.getSTART_ATTRACTION_PATH(),
                             ConfirmationActivity.OPEN_ON_PHONE_ANIMATION));
                     openActionPage.setImageResource(R.drawable.ic_full_openonphone);
                     openActionPage.setText(mContext.getString(R.string.action_open));
@@ -184,8 +184,8 @@ public class AttractionsGridPagerAdapter extends GridPagerAdapter
         if (column == 0) {
             return new ColorDrawable(0); // Empty black drawable
         }
-        if (mAttractions.size() > 0 && mAttractions.get(row).image != null) {
-            return new BitmapDrawable(mContext.getResources(), mAttractions.get(row).image);
+        if (mAttractions.size() > 0 && mAttractions.get(row).getImage() != null) {
+            return new BitmapDrawable(mContext.getResources(), mAttractions.get(row).getImage());
         }
         return super.getBackgroundForPage(row, column);
     }
@@ -229,7 +229,7 @@ public class AttractionsGridPagerAdapter extends GridPagerAdapter
 
         UtilityService.clearNotification(mContext);
         UtilityService.clearRemoteNotifications(mContext);
-        UtilityService.startDeviceActivity(mContext, pathName, attraction.name, attraction.city);
+        UtilityService.startDeviceActivity(mContext, pathName, attraction.getName(), attraction.getCity());
 
         ((Activity)mContext).finish();
     }
