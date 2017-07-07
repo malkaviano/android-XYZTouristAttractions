@@ -26,8 +26,8 @@ import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-
 import com.example.android.xyztouristattractions.R
+
 import com.example.android.xyztouristattractions.common.Utils
 import com.example.android.xyztouristattractions.service.UtilityService
 

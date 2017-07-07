@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
-        "source": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/src/main/res/mipmap-xxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/res/merged/debug/mipmap-xxhdpi/ic_launcher.png",
         "source": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     }

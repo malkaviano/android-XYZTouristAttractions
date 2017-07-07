@@ -1,4 +1,4 @@
-#Fri Jul 07 02:47:22 BRT 2017
+#Fri Jul 07 03:25:19 BRT 2017
 file.9=/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1b523a74e57758cbd98cd64ab5386c7124797243/classes.dex
 base.10=/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c1bca593eb74a52155d2fa4a81302e2bdf916ed6
 file.8=/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d8acff093feca4812e8e80936f13f99f95782818/classes.dex

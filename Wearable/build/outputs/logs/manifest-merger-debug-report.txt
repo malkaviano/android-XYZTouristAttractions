@@ -1,0 +1,175 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:18:1-69:12
+	package
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:20:5-56
+	android:versionName
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:19:5-51
+	xmlns:android
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:18:11-69
+	android:versionCode
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml
+uses-feature#android.hardware.type.watch
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:22:5-64
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:22:19-61
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:24:5-100
+	tools:node
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:24:78-97
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:24:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:25:5-101
+	tools:node
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:25:79-98
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:25:22-78
+uses-sdk
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:27:5-29:41
+MERGED from [com.google.android.support:wearable:2.0.3] /home/malk/.android/build-cache/833ce7f58232b11b2f86a724aced92d1664db63e/output/AndroidManifest.xml:4:3-70
+MERGED from [com.android.support:percent:25.2.0] /home/malk/.android/build-cache/8e23510ebc85b3004f9d28caed149253e5c8d346/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.2.0] /home/malk/.android/build-cache/efa53045c7b3c1a96481aab4180ebe0ab6a860b7/output/AndroidManifest.xml:20:5-43
+MERGED from [android-XYZTouristAttractions:Shared:unspecified] /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Shared/build/intermediates/bundles/default/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:support-v13:25.3.1] /home/malk/.android/build-cache/bb4610af817534315b126b7e4a683d8a7530ba87/output/AndroidManifest.xml:21:5-23:55
+MERGED from [com.google.android.gms:play-services-wearable:10.2.4] /home/malk/.android/build-cache/b2bda37819e426e2c6f827383b1b84cab344ca71/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-base:10.2.4] /home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /home/malk/.android/build-cache/7f59ccd769a6d784ec008481a4fd716a634eb085/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/malk/.android/build-cache/d8600dcaba3454109aaf6c31301f3bcaaae686d2/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.3.1] /home/malk/.android/build-cache/6979a5874938a487f6eb1ce07cdf164f680558dd/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] /home/malk/.android/build-cache/c8b1fa67c43f84ee68841e679653b3fec5dd4b0a/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/malk/.android/build-cache/4d33dd0235947d1315b649d6ea7159141aaa60f4/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/malk/.android/build-cache/0a32e3ebe92666e0f52ac2edf17c157361d130ae/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/malk/.android/build-cache/86560fb2e499ed9c2c7b9802a9deb1e78725718f/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] /home/malk/.android/build-cache/780b9b47d63adc63ea9c697c8f1b8a50adf5bfe1/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.google.maps.android:android-maps-utils:0.3.4] /home/malk/.android/build-cache/d781eabfdeedfd716fbafce53daab69dff6ba84e/output/AndroidManifest.xml:5:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:support-v13:25.3.1] /home/malk/.android/build-cache/bb4610af817534315b126b7e4a683d8a7530ba87/output/AndroidManifest.xml:23:9-52
+	android:targetSdkVersion
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:29:9-38
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml
+		INJECTED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:28:9-35
+application
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:31:5-67:19
+MERGED from [com.google.android.support:wearable:2.0.3] /home/malk/.android/build-cache/833ce7f58232b11b2f86a724aced92d1664db63e/output/AndroidManifest.xml:6:3-8:17
+MERGED from [com.android.support:percent:25.2.0] /home/malk/.android/build-cache/8e23510ebc85b3004f9d28caed149253e5c8d346/output/AndroidManifest.xml:22:5-20
+MERGED from [android-XYZTouristAttractions:Shared:unspecified] /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Shared/build/intermediates/bundles/default/AndroidManifest.xml:24:5-47
+MERGED from [com.android.support:support-v13:25.3.1] /home/malk/.android/build-cache/bb4610af817534315b126b7e4a683d8a7530ba87/output/AndroidManifest.xml:29:5-20
+MERGED from [com.google.android.gms:play-services-wearable:10.2.4] /home/malk/.android/build-cache/b2bda37819e426e2c6f827383b1b84cab344ca71/output/AndroidManifest.xml:18:5-19
+MERGED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-base:10.2.4] /home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:10.2.4] /home/malk/.android/build-cache/7f59ccd769a6d784ec008481a4fd716a634eb085/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/malk/.android/build-cache/d8600dcaba3454109aaf6c31301f3bcaaae686d2/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] /home/malk/.android/build-cache/6979a5874938a487f6eb1ce07cdf164f680558dd/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] /home/malk/.android/build-cache/c8b1fa67c43f84ee68841e679653b3fec5dd4b0a/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/malk/.android/build-cache/4d33dd0235947d1315b649d6ea7159141aaa60f4/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/malk/.android/build-cache/0a32e3ebe92666e0f52ac2edf17c157361d130ae/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/malk/.android/build-cache/86560fb2e499ed9c2c7b9802a9deb1e78725718f/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] /home/malk/.android/build-cache/780b9b47d63adc63ea9c697c8f1b8a50adf5bfe1/output/AndroidManifest.xml:29:5-20
+MERGED from [com.google.maps.android:android-maps-utils:0.3.4] /home/malk/.android/build-cache/d781eabfdeedfd716fbafce53daab69dff6ba84e/output/AndroidManifest.xml:7:5-20
+	android:label
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:34:9-41
+	android:allowBackup
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:32:9-35
+	android:icon
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:33:9-43
+	android:theme
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:35:9-59
+meta-data#com.google.android.wearable.standalone
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:37:9-39:37
+	android:value
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:39:13-34
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:38:13-66
+activity#com.example.android.xyztouristattractions.ui.AttractionsActivity
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:41:9-43:48
+	android:label
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:43:13-45
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:42:13-51
+activity#android.support.wearable.activity.ConfirmationActivity
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:45:9-47:64
+	android:theme
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:47:13-61
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:46:13-82
+service#com.example.android.xyztouristattractions.service.ListenerService
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:49:9-60:19
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:49:18-57
+intent-filter#com.google.android.gms.wearable.DATA_CHANGED+com.google.android.gms.wearable.MESSAGE_RECEIVED
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:50:13-59:29
+action#com.google.android.gms.wearable.DATA_CHANGED
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:52:17-87
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:52:25-84
+data
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:54:17-96
+	android:host
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:54:45-61
+	android:scheme
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:54:23-44
+	android:pathPrefix
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:54:62-94
+action#com.google.android.gms.wearable.MESSAGE_RECEIVED
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:56:17-91
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:56:25-88
+service#com.example.android.xyztouristattractions.service.UtilityService
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:62:9-59
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:62:18-56
+meta-data#com.google.android.gms.version
+ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:64:9-65:69
+MERGED from [com.google.android.gms:play-services-basement:10.2.4] /home/malk/.android/build-cache/d8600dcaba3454109aaf6c31301f3bcaaae686d2/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:65:13-66
+	android:name
+		ADDED from /home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/src/main/AndroidManifest.xml:64:20-65
+uses-library#com.google.android.wearable
+ADDED from [com.google.android.support:wearable:2.0.3] /home/malk/.android/build-cache/833ce7f58232b11b2f86a724aced92d1664db63e/output/AndroidManifest.xml:7:5-88
+	android:required
+		ADDED from [com.google.android.support:wearable:2.0.3] /home/malk/.android/build-cache/833ce7f58232b11b2f86a724aced92d1664db63e/output/AndroidManifest.xml:7:62-86
+	android:name
+		ADDED from [com.google.android.support:wearable:2.0.3] /home/malk/.android/build-cache/833ce7f58232b11b2f86a724aced92d1664db63e/output/AndroidManifest.xml:7:19-61
+meta-data#android.support.VERSION
+ADDED from [com.android.support:support-v13:25.3.1] /home/malk/.android/build-cache/bb4610af817534315b126b7e4a683d8a7530ba87/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] /home/malk/.android/build-cache/6979a5874938a487f6eb1ce07cdf164f680558dd/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] /home/malk/.android/build-cache/c8b1fa67c43f84ee68841e679653b3fec5dd4b0a/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] /home/malk/.android/build-cache/4d33dd0235947d1315b649d6ea7159141aaa60f4/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] /home/malk/.android/build-cache/0a32e3ebe92666e0f52ac2edf17c157361d130ae/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] /home/malk/.android/build-cache/86560fb2e499ed9c2c7b9802a9deb1e78725718f/output/AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] /home/malk/.android/build-cache/780b9b47d63adc63ea9c697c8f1b8a50adf5bfe1/output/AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:support-v13:25.3.1] /home/malk/.android/build-cache/bb4610af817534315b126b7e4a683d8a7530ba87/output/AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:support-v13:25.3.1] /home/malk/.android/build-cache/bb4610af817534315b126b7e4a683d8a7530ba87/output/AndroidManifest.xml:26:9-47
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:19:22-76
+uses-permission#android.permission.INTERNET
+ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:20:22-64
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:21:19-51
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:10.2.4] /home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/AndroidManifest.xml:21:52-75
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:10.2.4] /home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/AndroidManifest.xml:19:19-85

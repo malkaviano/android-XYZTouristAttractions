@@ -20,7 +20,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AttractionListFragment">
+    tools:context=".ui.AttractionListActivity">
 
     <com.example.android.xyztouristattractions.ui.AttractionsRecyclerView
         android:id="@android:id/list"

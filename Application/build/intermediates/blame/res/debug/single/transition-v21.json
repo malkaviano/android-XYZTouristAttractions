@@ -1,27 +1,11 @@
 [
     {
-        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/transition-v21/window_return.xml",
-        "source": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/src/main/res/transition-v21/window_return.xml"
-    },
-    {
-        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/transition-v21/shared_move.xml",
-        "source": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/src/main/res/transition-v21/shared_move.xml"
-    },
-    {
-        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/transition-v21/fade.xml",
-        "source": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/src/main/res/transition-v21/fade.xml"
-    },
-    {
         "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/res/merged/debug/transition-v21/fade.xml",
         "source": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/res/transition-v21/fade.xml"
     },
     {
         "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/res/merged/debug/transition-v21/window_enter.xml",
         "source": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/res/transition-v21/window_enter.xml"
-    },
-    {
-        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/transition-v21/window_enter.xml",
-        "source": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/src/main/res/transition-v21/window_enter.xml"
     },
     {
         "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/res/merged/debug/transition-v21/window_return.xml",

@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/build/intermediates/res/merged/debug/color/card_text_color.xml",
+        "source": "/home/malk/.android/build-cache/833ce7f58232b11b2f86a724aced92d1664db63e/output/res/color/card_text_color.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/build/intermediates/res/merged/debug/color/card_grey_text_color.xml",
+        "source": "/home/malk/.android/build-cache/833ce7f58232b11b2f86a724aced92d1664db63e/output/res/color/card_grey_text_color.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/build/intermediates/res/merged/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/build/intermediates/res/merged/debug/color/circular_button.xml",
+        "source": "/home/malk/.android/build-cache/833ce7f58232b11b2f86a724aced92d1664db63e/output/res/color/circular_button.xml"
+    },
+    {
+        "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/build/intermediates/res/merged/debug/color/common_google_signin_btn_tint.xml",
+        "source": "/home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/res/color/common_google_signin_btn_tint.xml"
+    }
+]

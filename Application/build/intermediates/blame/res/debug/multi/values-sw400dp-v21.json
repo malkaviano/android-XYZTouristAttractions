@@ -1,29 +1,5 @@
 [
     {
-        "outputFile": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw400dp-v21/values-sw400dp-v21.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 41,
-                    "endOffset": 92
-                },
-                "from": {
-                    "file": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/src/main/res/values-sw400dp-v21/dimens.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 662,
-                        "endColumn": 41,
-                        "endOffset": 699
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/incremental/mergeDebugResources/merged.dir/values-sw400dp-v21/values-sw400dp-v21.xml",
         "map": [
             {

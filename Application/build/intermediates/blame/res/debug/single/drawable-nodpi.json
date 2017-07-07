@@ -1,9 +1,5 @@
 [
     {
-        "merged": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-nodpi/empty_photo.png",
-        "source": "/home/malk/AndroidStudioProjects/XYZTouristAttractions/Application/src/main/res/drawable-nodpi/empty_photo.png"
-    },
-    {
         "merged": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/res/merged/debug/drawable-nodpi/empty_photo.png",
         "source": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/src/main/res/drawable-nodpi/empty_photo.png"
     }

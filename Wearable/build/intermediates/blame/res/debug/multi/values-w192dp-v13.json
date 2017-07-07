@@ -1,0 +1,83 @@
+[
+    {
+        "outputFile": "/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Wearable/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w192dp-v13/values-w192dp-v13.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 52,
+                    "endOffset": 103
+                },
+                "from": {
+                    "file": "/home/malk/.android/build-cache/833ce7f58232b11b2f86a724aced92d1664db63e/output/res/values-w192dp-v13/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 222,
+                        "endColumn": 48,
+                        "endOffset": 270
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 108,
+                    "endColumn": 53,
+                    "endOffset": 157
+                },
+                "from": {
+                    "file": "/home/malk/.android/build-cache/833ce7f58232b11b2f86a724aced92d1664db63e/output/res/values-w192dp-v13/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 0,
+                        "startOffset": 271,
+                        "endColumn": 49,
+                        "endOffset": 320
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 162,
+                    "endColumn": 54,
+                    "endOffset": 212
+                },
+                "from": {
+                    "file": "/home/malk/.android/build-cache/833ce7f58232b11b2f86a724aced92d1664db63e/output/res/values-w192dp-v13/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 0,
+                        "startOffset": 321,
+                        "endColumn": 50,
+                        "endOffset": 371
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 217,
+                    "endColumn": 53,
+                    "endOffset": 266
+                },
+                "from": {
+                    "file": "/home/malk/.android/build-cache/833ce7f58232b11b2f86a724aced92d1664db63e/output/res/values-w192dp-v13/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 0,
+                        "startOffset": 372,
+                        "endColumn": 49,
+                        "endOffset": 421
+                    }
+                }
+            }
+        ]
+    }
+]
