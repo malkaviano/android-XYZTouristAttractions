@@ -2,13 +2,85 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/6979a5874938a487f6eb1ce07cdf164f680558dd/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="d8110fcb022af93ded368a44dbf0d236660f25e4">
-        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4e1b27498e7317e46a08e49b4203ca4994a0c76c/classes.dex" />
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_3e089c64b7d69c9b5f77314ee669e25907858aee.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/d781eabfdeedfd716fbafce53daab69dff6ba84e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="cf251baf39f5c5138224b67b4106eb6331abbd13">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_8ec207ad705dd06145bc508887b3ed68ba8ce454.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/c8b1fa67c43f84ee68841e679653b3fec5dd4b0a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_29b07d75ec6ff027da6388ea7440f7d613b10457.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="919f0dfe192fb4e063e7dacadee7f8bb9a2672a9">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/annotations-13.0_63f0bda5b7cb2c1ff064ffa6396c0672bb767b4d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/4d33dd0235947d1315b649d6ea7159141aaa60f4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_654667c09e84d0dbbbe6631ad71534eceed4645f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.6.1/86b122e640af09b0723e1fa44083c354ba6d9089/glide-3.6.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="86b122e640af09b0723e1fa44083c354ba6d9089">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/glide-3.6.1_7f9fdb9264887323857568219d493af7d0a0429e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/d8600dcaba3454109aaf6c31301f3bcaaae686d2/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9ed08fab37c3a572da1d9ed2bf2e36c8d3e2bc48">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_d4ca123db6cd375c5f334408e0b8b6910f5abfa9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/support-annotations-25.3.1_0af0110c6c6bcbb525609f1cd9ac54373c062862.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/d9b6b896e2f82ae0177ebea69f908641127926e0/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_e93cbf0d0a4ebab0bba031668a36d6b2a34738d9.jar" />
     </item>
     <item
         is-multidex="true"
@@ -18,6 +90,168 @@
         revision="25.0.3"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_382fd4bf7a9c51593174ce250209a3c14b54b359/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/bb4610af817534315b126b7e4a683d8a7530ba87/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="8531f2d46b35de75e6130f25830e0c2c0d6bb98c">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_f323de12a269ad6f5fbfa3395219947df7bfa259.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d8110fcb022af93ded368a44dbf0d236660f25e4">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_4e1b27498e7317e46a08e49b4203ca4994a0c76c/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Shared/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="2b11f11533ccb01e9aab16e33711470c268f1672">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_cf52355c9c2ac5f354f9c27df302c964654d22a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/86560fb2e499ed9c2c7b9802a9deb1e78725718f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_706fd432184a5462ffcc685bd9f3b068a7ad6c4c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jre7/1.1.3-2/3fe54c7558c903868351ac79b792d152bca958f2/kotlin-stdlib-jre7-1.1.3-2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3fe54c7558c903868351ac79b792d152bca958f2">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/kotlin-stdlib-jre7-1.1.3-2_4c88afefd0591f89090cb3e6ee2936fba6ce03c1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/1507e940528bebd56bb841bc0ed24c049ea98013/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_90e4bd6d46e7b8ff54797aba75acb3b8170f52a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/48eb087590e7c09fea666117610e1b1a38e9a0a5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="7e0f082141b7aa90aab5d3a47ab09b0edc958f6b">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_3e414811de6b69a3ddd21a9945f24a4bb44a3878.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.1.3-2/9b44c139a4ec57031e0c84ba0e49ba16df6d801c/kotlin-stdlib-1.1.3-2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9b44c139a4ec57031e0c84ba0e49ba16df6d801c">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/kotlin-stdlib-1.1.3-2_1efaa56b828bef9442260e2d61766cb85b46d0b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/c943f78e1032bc808520add81293c58f8eef492a/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="dd1d0d84da2cff18f741c63a9c3af7d9aa89fdd6">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_c1bca593eb74a52155d2fa4a81302e2bdf916ed6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/e66ee6772556fe128b47a0f8e7773c42a2f22554/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_1895249c3cf316f2184bb6a2a6b0b5e12d96ba81.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/f4b3a9608ae22cc3fbe3a260b050636db038de86/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_c432a08abdca03825c387fa1946745b723f0d51e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/0a32e3ebe92666e0f52ac2edf17c157361d130ae/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_01a78cd7c67c050a9f9e7ccbd49105edb60ada31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/7f59ccd769a6d784ec008481a4fd716a634eb085/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="5803db663655ef5cb38c6bcb17ba326fdb9edfbd">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_1b523a74e57758cbd98cd64ab5386c7124797243.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/b2bda37819e426e2c6f827383b1b84cab344ca71/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1b95f2bf44857a158b097e9f80d5d18d69f32584">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_d8acff093feca4812e8e80936f13f99f95782818.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/3cd1a40a6687b5488d67a26e485de29adf93d305/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6d0d5e86f5b7203834df01ed78ebfdd5cbf74d48">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_e16e41db1345d13d8e22dbe986650d996e163289.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/780b9b47d63adc63ea9c697c8f1b8a50adf5bfe1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_54aabb69cafbd0f855baa9b20af45eb4f8e6d658.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/f37b54959b247064feca759a24f9bacf70772d8f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_a5764ca2792e80e09ed6c9e4224388d152d8be0b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/malk/.android/build-cache/c94a781991b4c9e0eb146dcb62bdc9474f59f7ba/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/pre-dexed/debug/classes_3e394c5c9cb8dfef8407b78eef479e574cfc8bbe.jar" />
     </item>
 
 </items>

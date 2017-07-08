@@ -35,5 +35,5 @@ data class Attraction(
     var city: String = "",
     var image: Bitmap? = null,
     var secondaryImage: Bitmap? = null,
-    var distance: String? = null
+    var distance: String = ""
 )
