@@ -1,4 +1,4 @@
-#Sat Jul 08 15:41:55 BRT 2017
+#Sat Jul 08 20:20:53 BRT 2017
 base.0=/home/malk/AndroidStudioProjects/android-XYZTouristAttractions/Application/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_382fd4bf7a9c51593174ce250209a3c14b54b359
 renamed.1=classes2.dex
 renamed.0=classes.dex

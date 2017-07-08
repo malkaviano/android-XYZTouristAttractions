@@ -35,7 +35,8 @@ import com.example.android.xyztouristattractions.service.UtilityService
  * The main tourist attraction activity screen which contains a list of
  * attractions sorted by distance.
  */
-class AttractionListActivity : AppCompatActivity(), ActivityCompat.OnRequestPermissionsResultCallback {
+class AttractionListActivity :
+        AppCompatActivity(), ActivityCompat.OnRequestPermissionsResultCallback {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -68,12 +69,14 @@ class AttractionListActivity : AppCompatActivity(), ActivityCompat.OnRequestPerm
 
     override fun onResume() {
         super.onResume()
+
         UtilityService.requestLocation(this)
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.main, menu)
+
         return true
     }
 
@@ -84,26 +87,37 @@ class AttractionListActivity : AppCompatActivity(), ActivityCompat.OnRequestPerm
         when (item.itemId) {
             R.id.test_notification -> {
                 UtilityService.triggerWearTest(this, false)
-                showDebugDialog(R.string.action_test_notification,
-                        R.string.action_test_notification_dialog)
+                showDebugDialog(
+                        R.string.action_test_notification,
+                        R.string.action_test_notification_dialog
+                )
                 return true
             }
             R.id.test_microapp -> {
                 UtilityService.triggerWearTest(this, true)
-                showDebugDialog(R.string.action_test_microapp,
-                        R.string.action_test_microapp_dialog)
+                showDebugDialog(
+                        R.string.action_test_microapp,
+                        R.string.action_test_microapp_dialog
+                )
                 return true
             }
             R.id.test_toggle_geofence -> {
                 val geofenceEnabled = Utils.getGeofenceEnabled(this)
                 Utils.storeGeofenceEnabled(this, !geofenceEnabled)
-                Toast.makeText(this, if (geofenceEnabled)
-                    "Debug: Geofencing trigger disabled"
-                else
-                    "Debug: Geofencing trigger enabled", Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                        this,
+                        "Debug: Geofencing trigger ${
+                            if (geofenceEnabled)
+                                "disabled"
+                            else
+                                "enabled"}",
+                        Toast.LENGTH_SHORT
+                ).show()
+
                 return true
             }
         }
+
         return super.onOptionsItemSelected(item)
     }
 
@@ -140,9 +154,11 @@ class AttractionListActivity : AppCompatActivity(), ActivityCompat.OnRequestPerm
      */
     private fun showPermissionSnackbar() {
         Snackbar.make(
-                findViewById(R.id.container), R.string.permission_explanation, Snackbar.LENGTH_LONG)
-                .setAction(R.string.permission_explanation_action) { requestFineLocationPermission() }
-                .show()
+                findViewById(R.id.container),
+                R.string.permission_explanation,
+                Snackbar.LENGTH_LONG
+                ).setAction(R.string.permission_explanation_action) { requestFineLocationPermission() }
+                 .show()
     }
 
     /**

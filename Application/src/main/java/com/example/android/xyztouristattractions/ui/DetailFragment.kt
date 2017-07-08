@@ -16,6 +16,7 @@
 
 package com.example.android.xyztouristattractions.ui
 
+import android.app.PendingIntent
 import android.app.TaskStackBuilder
 import android.content.Intent
 import android.net.Uri
@@ -47,17 +48,21 @@ import com.example.android.xyztouristattractions.provider.TouristAttractions.ATT
  * [com.example.android.xyztouristattractions.ui.DetailActivity]).
  */
 class DetailFragment : Fragment() {
-    private var mAttraction: Attraction? = null
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
-        setHasOptionsMenu(true)
-        val view = inflater!!.inflate(R.layout.fragment_detail, container, false)
-        val attractionName = arguments.getString(EXTRA_ATTRACTION)
-        mAttraction = findAttraction(attractionName)
 
-        if (mAttraction == null) {
+        setHasOptionsMenu(true)
+
+        val view = inflater.inflate(R.layout.fragment_detail, container, false)
+
+        val attractionName = arguments.getString(EXTRA_ATTRACTION)
+
+        val attraction = findAttraction(attractionName)
+
+        if (attraction == null) {
             activity.finish()
+
             return null
         }
 
@@ -68,18 +73,20 @@ class DetailFragment : Fragment() {
         val mapFab = view.findViewById(R.id.mapFab) as FloatingActionButton
 
         val location = Utils.getLocation(activity)
-        val distance = Utils.formatDistanceBetween(location, mAttraction!!.location)
+        val distance = Utils.formatDistanceBetween(location, attraction.location)
+
         if (TextUtils.isEmpty(distance)) {
             distanceTextView.visibility = View.GONE
         }
 
         nameTextView.text = attractionName
         distanceTextView.text = distance
-        descTextView.text = mAttraction!!.longDescription
+        descTextView.text = attraction.longDescription
 
         val imageSize = resources.getDimensionPixelSize(R.dimen.image_size) * Constants.IMAGE_ANIM_MULTIPLIER
+
         Glide.with(activity)
-                .load(mAttraction!!.imageUrl)
+                .load(attraction.imageUrl)
                 .diskCacheStrategy(DiskCacheStrategy.SOURCE)
                 .placeholder(R.color.lighter_gray)
                 .override(imageSize, imageSize)
@@ -87,15 +94,24 @@ class DetailFragment : Fragment() {
 
         mapFab.setOnClickListener {
             val intent = Intent(Intent.ACTION_VIEW)
-            intent.data = Uri.parse(Constants.MAPS_INTENT_URI + Uri.encode(mAttraction!!.name + ", " + mAttraction!!.city))
-            startActivity(intent)
+
+            intent.data = Uri.parse(
+                    Constants.MAPS_INTENT_URI + Uri.encode("${attraction.name}, ${attraction.city}")
+            )
+
+            //startActivity(intent)
+
+            // Verify that the intent will resolve to an activity
+            if (intent.resolveActivity(activity.packageManager) != null) {
+                startActivity(intent)
+            }
         }
 
         return view
     }
 
-    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
-        when (item!!.itemId) {
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
             android.R.id.home -> {
                 // Some small additions to handle "up" navigation correctly
                 val upIntent = NavUtils.getParentActivityIntent(activity)
@@ -115,6 +131,7 @@ class DetailFragment : Fragment() {
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                     // On Lollipop+ we finish so to run the nice animation
                     activity.finishAfterTransition()
+
                     return true
                 }
 
@@ -122,6 +139,7 @@ class DetailFragment : Fragment() {
                 return false
             }
         }
+
         return super.onOptionsItemSelected(item)
     }
 
@@ -131,12 +149,14 @@ class DetailFragment : Fragment() {
      */
     private fun findAttraction(attractionName: String): Attraction? {
         for ((_, attractions) in ATTRACTIONS) {
-            for (attraction in attractions) {
-                if (attractionName == attraction.name) {
-                    return attraction
+
+            attractions.forEach {
+                if (attractionName == it.name) {
+                    return it
                 }
             }
         }
+
         return null
     }
 

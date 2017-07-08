@@ -40,10 +40,11 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val attraction = intent.getStringExtra(EXTRA_ATTRACTION)
+
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                    .add(R.id.container, DetailFragment.createInstance(attraction))
-                    .commit()
+                                .add(R.id.container, DetailFragment.createInstance(attraction))
+                                .commit()
         }
     }
 
@@ -51,12 +52,16 @@ class DetailActivity : AppCompatActivity() {
 
         private val EXTRA_ATTRACTION = "attraction"
 
-        @TargetApi(Build.VERSION_CODES.LOLLIPOP)
         fun launch(activity: Activity, attraction: String, heroView: View) {
             val intent = getLaunchIntent(activity, attraction)
+
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                 val options = ActivityOptionsCompat.makeSceneTransitionAnimation(
-                        activity, heroView, heroView.transitionName)
+                        activity,
+                        heroView,
+                        heroView.transitionName
+                )
+
                 ActivityCompat.startActivity(activity, intent, options.toBundle())
             } else {
                 activity.startActivity(intent)
@@ -65,7 +70,9 @@ class DetailActivity : AppCompatActivity() {
 
         fun getLaunchIntent(context: Context, attraction: String): Intent {
             val intent = Intent(context, DetailActivity::class.java)
+
             intent.putExtra(EXTRA_ATTRACTION, attraction)
+
             return intent
         }
     }

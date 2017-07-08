@@ -19,7 +19,6 @@ package com.example.android.xyztouristattractions.ui
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.location.Location
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.content.LocalBroadcastManager
@@ -30,7 +29,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.example.android.xyztouristattractions.R
@@ -38,14 +36,13 @@ import com.example.android.xyztouristattractions.common.Attraction
 import com.example.android.xyztouristattractions.common.Constants
 import com.example.android.xyztouristattractions.common.Utils
 import com.example.android.xyztouristattractions.provider.TouristAttractions
+import com.example.android.xyztouristattractions.provider.TouristAttractions.ATTRACTIONS
 import com.example.android.xyztouristattractions.service.UtilityService
-import com.google.android.gms.location.FusedLocationProviderApi
+import com.google.android.gms.location.LocationResult
 import com.google.android.gms.maps.model.LatLng
 import com.google.maps.android.SphericalUtil
+import java.util.*
 
-import java.util.Collections
-
-import com.example.android.xyztouristattractions.provider.TouristAttractions.ATTRACTIONS
 
 /**
  * The main tourist attraction fragment which contains a list of attractions
@@ -54,7 +51,7 @@ import com.example.android.xyztouristattractions.provider.TouristAttractions.ATT
  */
 class AttractionListFragment : Fragment() {
 
-    private var mAdapter: AttractionAdapter? = null
+    private lateinit var mAdapter: AttractionAdapter
     private var mLatestLocation: LatLng? = null
     private var mImageSize: Int = 0
     private var mItemClicked: Boolean = false
@@ -65,11 +62,15 @@ class AttractionListFragment : Fragment() {
         mImageSize = resources.getDimensionPixelSize(R.dimen.image_size) * Constants.IMAGE_ANIM_MULTIPLIER
 
         mLatestLocation = Utils.getLocation(activity)
+
         val attractions = loadAttractionsFromLocation(mLatestLocation)
+
         mAdapter = AttractionAdapter(activity, attractions)
 
         val view = inflater!!.inflate(R.layout.fragment_main, container, false)
+
         val recyclerView = view.findViewById(android.R.id.list) as AttractionsRecyclerView
+
         recyclerView.setEmptyView(view.findViewById(android.R.id.empty))
         recyclerView.setHasFixedSize(true)
         recyclerView.adapter = mAdapter
@@ -91,17 +92,24 @@ class AttractionListFragment : Fragment() {
 
     private val mBroadcastReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
-            val location = intent.getParcelableExtra<Location>(FusedLocationProviderApi.KEY_LOCATION_CHANGED)
-            if (location != null) {
-                mLatestLocation = LatLng(location.latitude, location.longitude)
-                mAdapter!!.mAttractionList = loadAttractionsFromLocation(mLatestLocation)
-                mAdapter!!.notifyDataSetChanged()
+
+            //val location = intent.getParcelableExtra<Location>("com.google.android.location.LOCATION")
+
+            if (LocationResult.hasResult(intent)) {
+                val location = LocationResult.extractResult(intent)
+
+                if (location != null) {
+                    mLatestLocation = LatLng(location.lastLocation.latitude, location.lastLocation.longitude)
+                    mAdapter.mAttractionList = loadAttractionsFromLocation(mLatestLocation)
+                    mAdapter.notifyDataSetChanged()
+                }
             }
         }
     }
 
-    private fun loadAttractionsFromLocation(curLatLng: LatLng?): List<Attraction>? {
+    private fun loadAttractionsFromLocation(curLatLng: LatLng?): List<Attraction> {
         val closestCity = TouristAttractions.getClosestCity(curLatLng)
+
         if (closestCity != null) {
             val attractions = ATTRACTIONS[closestCity]
             if (curLatLng != null) {
@@ -114,24 +122,30 @@ class AttractionListFragment : Fragment() {
                     (lhsDistance - rhsDistance).toInt()
                 }
             }
-            return attractions
+
+            return attractions!!
         }
-        return null
+
+        return listOf()
     }
 
-    private inner class AttractionAdapter(private val mContext: Context, var mAttractionList: List<Attraction>?) : RecyclerView.Adapter<ViewHolder>(), ItemClickListener {
+    private inner class AttractionAdapter(
+            private val mContext: Context,
+            var mAttractionList: List<Attraction>
+    ) : RecyclerView.Adapter<ViewHolder>() {
 
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
             val inflater = LayoutInflater.from(mContext)
             val view = inflater.inflate(R.layout.list_row, parent, false)
-            return ViewHolder(view, this)
+            return ViewHolder(view, this::onItemClick)
         }
 
         override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-            val attraction = mAttractionList!![position]
+            val attraction = mAttractionList[position]
 
             holder.mTitleTextView.text = attraction.name
             holder.mDescriptionTextView.text = attraction.description
+
             Glide.with(mContext)
                     .load(attraction.imageUrl)
                     .diskCacheStrategy(DiskCacheStrategy.SOURCE)
@@ -140,6 +154,7 @@ class AttractionListFragment : Fragment() {
                     .into(holder.mImageView)
 
             val distance = Utils.formatDistanceBetween(mLatestLocation, attraction.location)
+
             if (TextUtils.isEmpty(distance)) {
                 holder.mOverlayTextView.visibility = View.GONE
             } else {
@@ -153,20 +168,26 @@ class AttractionListFragment : Fragment() {
         }
 
         override fun getItemCount(): Int {
-            return if (mAttractionList == null) 0 else mAttractionList!!.size
+            return mAttractionList.size
         }
 
-        override fun onItemClick(view: View, position: Int) {
+        private fun onItemClick(view: View, position: Int) {
             if (!mItemClicked) {
                 mItemClicked = true
+
                 val heroView = view.findViewById(android.R.id.icon)
+
                 DetailActivity.launch(
-                        activity, mAdapter!!.mAttractionList!![position].name, heroView)
+                        activity,
+                        mAdapter.mAttractionList[position].name,
+                        heroView
+                )
             }
         }
     }
 
-    private class ViewHolder(view: View, internal var mItemClickListener: ItemClickListener) : RecyclerView.ViewHolder(view), View.OnClickListener {
+    private class ViewHolder(view: View, internal var mItemClickListener: (View, Int) -> Unit) :
+            RecyclerView.ViewHolder(view), View.OnClickListener {
 
         internal var mTitleTextView: TextView
         internal var mDescriptionTextView: TextView
@@ -182,11 +203,7 @@ class AttractionListFragment : Fragment() {
         }
 
         override fun onClick(v: View) {
-            mItemClickListener.onItemClick(v, adapterPosition)
+            mItemClickListener(v, adapterPosition)
         }
-    }
-
-    internal interface ItemClickListener {
-        fun onItemClick(view: View, position: Int)
     }
 }
